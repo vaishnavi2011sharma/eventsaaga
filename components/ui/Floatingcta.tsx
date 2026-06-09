@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 
-const WHATSAPP_NUMBER = "919876543210"; // Replace with actual number
-const PHONE_NUMBER = "9876543210";       // Replace with actual number
+const WHATSAPP_NUMBER = "919958475988"; // Replace with actual number
+const PHONE_NUMBER = "919958475988";       // Replace with actual number
 
 export default function FloatingCTA() {
   const [wpHovered, setWpHovered] = useState(false);

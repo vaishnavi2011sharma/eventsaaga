@@ -214,7 +214,7 @@ export default function Hero() {
               fontWeight: 700,
               color: "#1a1009",
               letterSpacing: "-0.01em",
-            }}>Crafting Moments</span>
+            }}>Celebrating Moments</span>
             <span style={{
               display: "block",
               fontFamily: "'Playfair Display', serif",
@@ -222,7 +222,7 @@ export default function Hero() {
               fontWeight: 700,
               color: "#1a1009",
               letterSpacing: "-0.01em",
-            }}>Into Timeless</span>
+            }}>Preserving Memories on</span>
             <span style={{
               display: "flex", alignItems: "center", gap: "10px",
               fontFamily: "'Cormorant Garamond', serif",
@@ -235,7 +235,7 @@ export default function Hero() {
               backgroundClip: "text",
               letterSpacing: "-0.02em",
             }}>
-              Memories
+              Time
               <svg width="30" height="30" viewBox="0 0 24 24" fill="#e8647a" style={{ WebkitTextFillColor: "unset", flexShrink: 0 }}>
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
               </svg>

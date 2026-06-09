@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const categoryNav = [
   { label: "Weddings", href: "/weddings", dropdown: ["Wedding Decor", "Mandap Setup", "Floral Arrangements", "LED Lighting"] },
@@ -103,7 +104,24 @@ export default function Navbar() {
         <div style={{ maxWidth: "1320px", margin: "0 auto", padding: "0 24px", display: "flex", alignItems: "center", height: "66px", gap: "20px" }}>
 
           {/* Logo */}
-          <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: "10px" }}>
+          <Link
+                href="/"
+                style={{
+                  textDecoration: "none",
+                  flexShrink: 0,
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  src="/logo.png"
+                  alt="EventSaaga Logo"
+                  width={130}
+                  height={35}
+                  priority
+                />
+              </Link>
+          {/* <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: "10px" }}>
             <div style={{ width: "42px", height: "42px", borderRadius: "50%", background: "linear-gradient(135deg, #c8861a, #a855f7)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 14px rgba(124,58,237,0.35)" }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -115,7 +133,7 @@ export default function Navbar() {
               </div>
               <div style={{ fontSize: "0.55rem", color: "#9a8070", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'DM Sans', sans-serif" }}>Crafting Moments</div>
             </div>
-          </Link>
+          </Link> */}
 
           {/* Search */}
           <div style={{ flex: 1, maxWidth: "460px" }}>
@@ -139,11 +157,11 @@ export default function Navbar() {
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <a href="/help" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", textDecoration: "none", color: "#444" }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", fontWeight: 600, letterSpacing: "0.06em", color: "#555" }}>HELP CENTER</span>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", fontWeight: 600, letterSpacing: "0.06em", color: "#555" }}>SUPPORT HUB</span>
             </a>
             <a href="/login" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", textDecoration: "none", color: "#444" }}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", fontWeight: 600, letterSpacing: "0.06em", color: "#555" }}>LOG IN</span>
+              <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", fontWeight: 600, letterSpacing: "0.06em", color: "#555" }}>SIGN IN</span>
             </a>
 
             {/* ── CITY BUTTON ── */}

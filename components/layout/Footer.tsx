@@ -133,8 +133,8 @@ export default function Footer() {
           <h4 style={{ fontFamily: "Playfair Display, serif", fontWeight: 700, color: "#1a1009", marginBottom: "20px", fontSize: "1rem" }}>Get In Touch</h4>
           {[
             { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>, text: "Pan India Services – 100+ Cities" },
-            { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.03 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>, text: "+91 98765 43210" },
-            { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, text: "hello@eventsaaga.com" },
+            { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.03 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>, text: "+91-9958475988" },
+            { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>, text: "eventsaaga1985@gmail.com" },
             { icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c8861a" strokeWidth="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>, text: "24/7 Support Available" },
           ].map((item, i) => (
             <div key={i} style={{ display: "flex", gap: "10px", marginBottom: "14px", alignItems: "flex-start" }}>
@@ -154,7 +154,7 @@ export default function Footer() {
         maxWidth: "1280px", margin: "0 auto",
       }}>
         <p style={{ color: "#8a7060", fontSize: "0.8rem" }}>
-          © 2025 EventSaaga. All Rights Reserved. Made with{" "}
+          © 2026 EventSaaga. All Rights Reserved. Made with{" "}
           <svg width="12" height="12" viewBox="0 0 24 24" fill="#e8647a" style={{ display: "inline", verticalAlign: "middle" }}><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           {" "}for unforgettable memories.
         </p>

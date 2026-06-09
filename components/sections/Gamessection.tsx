@@ -1,12 +1,13 @@
 "use client";
 import { useState, useRef } from "react";
 
-const WHATSAPP_NUMBER = "919876543210";
-const PHONE_NUMBER = "9876543210";
+const WHATSAPP_NUMBER = "919958475988";
+const PHONE_NUMBER = "919958475988";
 
 const games = [
   {
     id: 1,
+    slug: "casino-game-on-rent",
     name: "Casino Game on Rent",
     desc: "Full casino setup – roulette, poker tables, chips & more for your event.",
     badge: "Most Popular",
@@ -29,6 +30,7 @@ const games = [
   },
   {
     id: 2,
+    slug: "hammer-game-on-rent",
     name: "Hammer Game on Rent",
     desc: "Test your strength! Classic high striker hammer game for all ages.",
     badge: "Fun for All",
@@ -48,6 +50,7 @@ const games = [
   },
   {
     id: 3,
+    slug: "bouncy-castle-on-rent",
     name: "Bouncy Castle on Rent",
     desc: "Colorful inflatable bouncy castles – kids' favourite at any party!",
     badge: "Kids Favourite",
@@ -68,6 +71,7 @@ const games = [
   },
   {
     id: 4,
+    slug: "electronic-games-on-rent",
     name: "Electronic Games on Rent",
     desc: "Arcade classics, racing simulators & interactive digital entertainment setups.",
     badge: "Trending",
@@ -89,6 +93,7 @@ const games = [
   },
   {
     id: 5,
+    slug: "electronic-basketball-on-rent",
     name: "Electronic Basketball on Rent",
     desc: "Score big! Electronic scoring basketball hoop – perfect for indoor events.",
     badge: "Sports Fun",
@@ -109,6 +114,7 @@ const games = [
   },
   {
     id: 6,
+    slug: "mega-wire-on-rent",
     name: "Mega Wire on Rent",
     desc: "The electric maze! Navigate the wire without touching – thrilling for guests.",
     badge: "Thrilling",
@@ -128,6 +134,7 @@ const games = [
   },
   {
     id: 7,
+    slug: "electronic-toy-train-on-rent",
     name: "Electronic Toy Train on Rent",
     desc: "Delightful mini train ride for kids – a must-have at birthday parties.",
     badge: "Kids Love It",
@@ -150,6 +157,7 @@ const games = [
   },
   {
     id: 8,
+    slug: "wooden-games-on-rent",
     name: "Wooden Games on Rent",
     desc: "Giant Jenga, Ring Toss, Connect4 & classic wooden party games.",
     badge: "Classic",
@@ -171,6 +179,7 @@ const games = [
   },
   {
     id: 9,
+    slug: "cricket-machine-on-rent",
     name: "Cricket Machine on Rent",
     desc: "Automatic ball-throwing cricket machine with netting cage – batters ready!",
     badge: "Sport Special",
@@ -189,6 +198,7 @@ const games = [
   },
   {
     id: 10,
+    slug: "columbus-on-rent",
     name: "Columbus on Rent",
     desc: "Giant swinging Columbus boat ride – the crowd-puller at any mela or fest.",
     badge: "Crowd Puller",
@@ -210,6 +220,7 @@ const games = [
   },
   {
     id: 11,
+    slug: "giant-wheel-on-rent",
     name: "Giant Wheel on Rent",
     desc: "Majestic rotating ferris wheel – the iconic centrepiece for big events & fairs.",
     badge: "Iconic",
@@ -234,6 +245,7 @@ const games = [
   },
   {
     id: 12,
+    slug: "popcorn-machine-on-rent",
     name: "Popcorn Machine on Rent",
     desc: "Freshly popped popcorn machine – the perfect snack station for events.",
     badge: "Snack Hit",
@@ -254,6 +266,7 @@ const games = [
   },
   {
     id: 13,
+    slug: "candy-floss-machine-on-rent",
     name: "Candy Floss Machine on Rent",
     desc: "Fluffy cotton candy machine – kids & adults both go crazy for it!",
     badge: "Sweet Fun",
@@ -273,6 +286,7 @@ const games = [
   },
   {
     id: 14,
+    slug: "chocolate-fountain-on-rent",
     name: "Chocolate Fountain on Rent",
     desc: "Flowing chocolate fountain with dipping treats – pure luxury for guests.",
     badge: "Premium",
@@ -295,6 +309,7 @@ const games = [
   },
   {
     id: 15,
+    slug: "bungee-jumping-on-rent",
     name: "Bungee Jumping on Rent",
     desc: "Safe, professional bungee jumping setup – the ultimate adrenaline rush!",
     badge: "Adrenaline",
@@ -316,6 +331,7 @@ const games = [
   },
   {
     id: 16,
+    slug: "toy-clay-machine-on-rent",
     name: "Toy Clay Machine on Rent",
     desc: "Automated clay moulding station – kids make their own souvenirs!",
     badge: "Creative",
@@ -350,9 +366,12 @@ export default function GamesSection() {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
   };
   const openCall = () => { window.location.href = `tel:${PHONE_NUMBER}`; };
-  const openBooking = (gameName: string) => {
-    window.open(`/book?game=${encodeURIComponent(gameName)}`, "_blank");
+  const openBooking = (slug: string) => {
+  window.location.href = `/games/${slug}`;
   };
+  // const openBooking = (gameName: string) => {
+  //   window.open(`/book?game=${encodeURIComponent(gameName)}`, "_blank");
+  // };
 
   return (
     <section style={{ padding: "80px 0", background: "#fff" }}>
@@ -506,7 +525,7 @@ export default function GamesSection() {
                     <div style={{ display: "flex", gap: "8px" }}>
                       {/* Book Now */}
                       <button
-                        onClick={() => openBooking(game.name)}
+                        onClick={() => window.location.href = `/games/${game.slug}`}
                         style={{
                           flex: 1,
                           padding: "9px 12px",
